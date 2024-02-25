@@ -22,3 +22,9 @@ enum City: Codable {
     case Lahore
     case Islamabad
 }
+
+enum LoginState {
+    case login
+    case newUser
+    case home
+}

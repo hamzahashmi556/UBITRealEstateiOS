@@ -27,6 +27,13 @@
 		AB044F972B8B34D000F127AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AB044F962B8B34D000F127AE /* FirebaseFirestore */; };
 		AB044F992B8B34D000F127AE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB044F982B8B34D000F127AE /* FirebaseFirestoreSwift */; };
 		AB044F9B2B8B34D000F127AE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AB044F9A2B8B34D000F127AE /* FirebaseStorage */; };
+		AB044F9D2B8B37BE00F127AE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB044F9C2B8B37BE00F127AE /* LandingView.swift */; };
+		AB044FA02B8B38C100F127AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB044F9F2B8B38C100F127AE /* AppDelegate.swift */; };
+		AB044FA22B8B39AC00F127AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB044FA12B8B39AB00F127AE /* GoogleService-Info.plist */; };
+		AB2567A52B8B442800075563 /* Extension+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A42B8B442800075563 /* Extension+Numbers.swift */; };
+		AB2567A72B8B4CD800075563 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A62B8B4CD800075563 /* LoginView.swift */; };
+		AB2567A92B8B4CE200075563 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A82B8B4CE200075563 /* SignUpView.swift */; };
+		AB2567AB2B8B4E3E00075563 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567AA2B8B4E3E00075563 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,13 @@
 		AB044F872B8B19A800F127AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AB044F8B2B8B1A1900F127AE /* OnboardingTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTutorialView.swift; sourceTree = "<group>"; };
 		AB044F8D2B8B1F4700F127AE /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		AB044F9C2B8B37BE00F127AE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		AB044F9F2B8B38C100F127AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB044FA12B8B39AB00F127AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB2567A42B8B442800075563 /* Extension+Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Numbers.swift"; sourceTree = "<group>"; };
+		AB2567A62B8B4CD800075563 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AB2567A82B8B4CE200075563 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AB2567AA2B8B4E3E00075563 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +99,12 @@
 		AB044F5E2B8B069E00F127AE /* StateAgency */ = {
 			isa = PBXGroup;
 			children = (
+				AB044F9E2B8B38AE00F127AE /* Main */,
 				AB044F712B8B09A500F127AE /* MVVM */,
 				AB044F7B2B8B0C9000F127AE /* Supporting Files */,
-				AB044F5F2B8B069E00F127AE /* StateAgencyApp.swift */,
-				AB044F612B8B069E00F127AE /* ContentView.swift */,
 				AB044F652B8B06A000F127AE /* Assets.xcassets */,
 				AB044F6A2B8B06A000F127AE /* StateAgency.entitlements */,
+				AB044FA12B8B39AB00F127AE /* GoogleService-Info.plist */,
 				AB044F6B2B8B06A000F127AE /* Info.plist */,
 				AB044F672B8B06A000F127AE /* Preview Content */,
 			);
@@ -143,6 +157,7 @@
 		AB044F7B2B8B0C9000F127AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB2567A32B8B440800075563 /* Extensions */,
 				AB044F7C2B8B0C9F00F127AE /* Enum.swift */,
 				AB044F7F2B8B0CD000F127AE /* HomeViewModel.swift */,
 			);
@@ -177,6 +192,9 @@
 		AB044F892B8B19BF00F127AE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				AB044F9C2B8B37BE00F127AE /* LandingView.swift */,
+				AB2567A62B8B4CD800075563 /* LoginView.swift */,
+				AB2567A82B8B4CE200075563 /* SignUpView.swift */,
 				AB044F8B2B8B1A1900F127AE /* OnboardingTutorialView.swift */,
 			);
 			path = Onboarding;
@@ -191,6 +209,25 @@
 				AB044F762B8B0A1300F127AE /* Profile */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		AB044F9E2B8B38AE00F127AE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB044F9F2B8B38C100F127AE /* AppDelegate.swift */,
+				AB044F5F2B8B069E00F127AE /* StateAgencyApp.swift */,
+				AB044F612B8B069E00F127AE /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AB2567A32B8B440800075563 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB2567A42B8B442800075563 /* Extension+Numbers.swift */,
+				AB2567AA2B8B4E3E00075563 /* Extension+String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +301,7 @@
 			files = (
 				AB044F692B8B06A000F127AE /* Preview Assets.xcassets in Resources */,
 				AB044F662B8B06A000F127AE /* Assets.xcassets in Resources */,
+				AB044FA22B8B39AC00F127AE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,17 +312,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2567A52B8B442800075563 /* Extension+Numbers.swift in Sources */,
 				AB044F832B8B168D00F127AE /* Property.swift in Sources */,
+				AB044F9D2B8B37BE00F127AE /* LandingView.swift in Sources */,
 				AB044F622B8B069E00F127AE /* ContentView.swift in Sources */,
 				AB044F742B8B09FA00F127AE /* TabbarView.swift in Sources */,
+				AB044FA02B8B38C100F127AE /* AppDelegate.swift in Sources */,
 				AB044F862B8B174E00F127AE /* AddPostView.swift in Sources */,
 				AB044F802B8B0CD000F127AE /* HomeViewModel.swift in Sources */,
 				AB044F8E2B8B1F4700F127AE /* OnboardingViewModel.swift in Sources */,
 				AB044F782B8B0A2800F127AE /* HomeView.swift in Sources */,
 				AB044F7D2B8B0C9F00F127AE /* Enum.swift in Sources */,
 				AB044F7A2B8B0A3100F127AE /* ProfileView.swift in Sources */,
+				AB2567A92B8B4CE200075563 /* SignUpView.swift in Sources */,
 				AB044F8C2B8B1A1900F127AE /* OnboardingTutorialView.swift in Sources */,
+				AB2567AB2B8B4E3E00075563 /* Extension+String.swift in Sources */,
 				AB044F602B8B069E00F127AE /* StateAgencyApp.swift in Sources */,
+				AB2567A72B8B4CD800075563 /* LoginView.swift in Sources */,
 				AB044F882B8B19A800F127AE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,13 +473,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = UBIT.StateAgency;
+				PRODUCT_BUNDLE_IDENTIFIER = ubit.realstate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -465,13 +510,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = UBIT.StateAgency;
+				PRODUCT_BUNDLE_IDENTIFIER = ubit.realstate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

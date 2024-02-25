@@ -9,9 +9,28 @@ import SwiftUI
 
 struct OnboardingTutorialView: View {
     
-    @ObservedObject var onboardingVM: OnboardingViewModel
+    @EnvironmentObject var onboardingVM: OnboardingViewModel
     
-    @State var selectedPage = 0
+    @State private var titles = [
+        "Welcome to UBIT Estate Agency",
+        "Powerful Search Engine for properties",
+        "Buy/Sell or Rent your house, apartments, flats, portions etc"
+    ]
+    
+    @State private var subTitles = [
+        "Official Estate Agency of UBIT 4th Year students",
+        "We are developing powerful searching for users to find their ideal place for home",
+        "You can post the ad to rent or sell your place or search with our app to buy or rent a new place"
+    ]
+    
+    @State private var images = [
+        "house.lodge.circle.fill",
+        "location.magnifyingglass",
+        "figure.2.circle.fill"
+    ]
+
+    
+    @State private var selectedPage = 0
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -21,19 +40,19 @@ struct OnboardingTutorialView: View {
                     VStack {
                         
                         
-                        Image(systemName: onboardingVM.images[index])
+                        Image(systemName: self.images[index])
                             .resizable()
                             .frame(width: 200, height: 200)
                             .aspectRatio(contentMode: .fit)
                             .foregroundStyle(.accent)
                         
                         
-                        Text(onboardingVM.titles[index])
+                        Text(self.titles[index])
                             .font(.title)
                             .fontWeight(.bold)
                         
                         
-                        Text(onboardingVM.subTitles[index])
+                        Text(self.subTitles[index])
                             .font(.title2)
                             .padding(.top)
                         
@@ -55,5 +74,5 @@ struct OnboardingTutorialView: View {
 }
 
 #Preview {
-    OnboardingTutorialView(onboardingVM: OnboardingViewModel())
+    OnboardingTutorialView()
 }
