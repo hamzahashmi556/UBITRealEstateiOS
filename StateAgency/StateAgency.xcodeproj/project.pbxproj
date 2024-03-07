@@ -30,10 +30,15 @@
 		AB044F9D2B8B37BE00F127AE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB044F9C2B8B37BE00F127AE /* LandingView.swift */; };
 		AB044FA02B8B38C100F127AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB044F9F2B8B38C100F127AE /* AppDelegate.swift */; };
 		AB044FA22B8B39AC00F127AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB044FA12B8B39AB00F127AE /* GoogleService-Info.plist */; };
+		AB050AA32B93DBF4002CD1D5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB050AA22B93DBF4002CD1D5 /* StorageManager.swift */; };
+		AB050AA52B93F005002CD1D5 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB050AA42B93F005002CD1D5 /* FirestoreManager.swift */; };
 		AB2567A52B8B442800075563 /* Extension+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A42B8B442800075563 /* Extension+Numbers.swift */; };
 		AB2567A72B8B4CD800075563 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A62B8B4CD800075563 /* LoginView.swift */; };
 		AB2567A92B8B4CE200075563 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567A82B8B4CE200075563 /* SignUpView.swift */; };
 		AB2567AB2B8B4E3E00075563 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2567AA2B8B4E3E00075563 /* Extension+String.swift */; };
+		ABFEDE8A2B9A4E5E00254B3D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEDE872B9A4E5E00254B3D /* ImagePicker.swift */; };
+		ABFEDE8B2B9A4E5E00254B3D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEDE882B9A4E5E00254B3D /* TextField.swift */; };
+		ABFEDE8C2B9A4E5E00254B3D /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEDE892B9A4E5E00254B3D /* AppButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,10 +62,15 @@
 		AB044F9C2B8B37BE00F127AE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		AB044F9F2B8B38C100F127AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB044FA12B8B39AB00F127AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB050AA22B93DBF4002CD1D5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		AB050AA42B93F005002CD1D5 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		AB2567A42B8B442800075563 /* Extension+Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Numbers.swift"; sourceTree = "<group>"; };
 		AB2567A62B8B4CD800075563 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AB2567A82B8B4CE200075563 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		AB2567AA2B8B4E3E00075563 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		ABFEDE872B9A4E5E00254B3D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ABFEDE882B9A4E5E00254B3D /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		ABFEDE892B9A4E5E00254B3D /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 		AB044F722B8B09EE00F127AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB050A9A2B93BE89002CD1D5 /* Reuse Views */,
 				AB044F892B8B19BF00F127AE /* Onboarding */,
 				AB044F8A2B8B19C600F127AE /* Tabbar */,
 			);
@@ -157,6 +168,7 @@
 		AB044F7B2B8B0C9000F127AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB050AA12B93DBEB002CD1D5 /* Managers */,
 				AB2567A32B8B440800075563 /* Extensions */,
 				AB044F7C2B8B0C9F00F127AE /* Enum.swift */,
 				AB044F7F2B8B0CD000F127AE /* HomeViewModel.swift */,
@@ -219,6 +231,25 @@
 				AB044F612B8B069E00F127AE /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		AB050A9A2B93BE89002CD1D5 /* Reuse Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABFEDE892B9A4E5E00254B3D /* AppButton.swift */,
+				ABFEDE872B9A4E5E00254B3D /* ImagePicker.swift */,
+				ABFEDE882B9A4E5E00254B3D /* TextField.swift */,
+			);
+			path = "Reuse Views";
+			sourceTree = "<group>";
+		};
+		AB050AA12B93DBEB002CD1D5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AB050AA42B93F005002CD1D5 /* FirestoreManager.swift */,
+				AB050AA22B93DBF4002CD1D5 /* StorageManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		AB2567A32B8B440800075563 /* Extensions */ = {
@@ -312,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB050AA52B93F005002CD1D5 /* FirestoreManager.swift in Sources */,
 				AB2567A52B8B442800075563 /* Extension+Numbers.swift in Sources */,
 				AB044F832B8B168D00F127AE /* Property.swift in Sources */,
 				AB044F9D2B8B37BE00F127AE /* LandingView.swift in Sources */,
@@ -319,16 +351,20 @@
 				AB044F742B8B09FA00F127AE /* TabbarView.swift in Sources */,
 				AB044FA02B8B38C100F127AE /* AppDelegate.swift in Sources */,
 				AB044F862B8B174E00F127AE /* AddPostView.swift in Sources */,
+				ABFEDE8C2B9A4E5E00254B3D /* AppButton.swift in Sources */,
 				AB044F802B8B0CD000F127AE /* HomeViewModel.swift in Sources */,
 				AB044F8E2B8B1F4700F127AE /* OnboardingViewModel.swift in Sources */,
 				AB044F782B8B0A2800F127AE /* HomeView.swift in Sources */,
 				AB044F7D2B8B0C9F00F127AE /* Enum.swift in Sources */,
+				AB050AA32B93DBF4002CD1D5 /* StorageManager.swift in Sources */,
 				AB044F7A2B8B0A3100F127AE /* ProfileView.swift in Sources */,
 				AB2567A92B8B4CE200075563 /* SignUpView.swift in Sources */,
 				AB044F8C2B8B1A1900F127AE /* OnboardingTutorialView.swift in Sources */,
+				ABFEDE8B2B9A4E5E00254B3D /* TextField.swift in Sources */,
 				AB2567AB2B8B4E3E00075563 /* Extension+String.swift in Sources */,
 				AB044F602B8B069E00F127AE /* StateAgencyApp.swift in Sources */,
 				AB2567A72B8B4CD800075563 /* LoginView.swift in Sources */,
+				ABFEDE8A2B9A4E5E00254B3D /* ImagePicker.swift in Sources */,
 				AB044F882B8B19A800F127AE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

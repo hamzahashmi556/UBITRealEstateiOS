@@ -83,44 +83,6 @@ struct LandingView: View {
     }
 }
 
-struct AppButton: View {
-    
-    @State var title: String
-    
-    @State var textColor: Color = .accentColor
-    
-    @State var backgroundColor: Color = .accentColor
-    
-    @State var stroke: Bool = false
-        
-    var body: some View {
-        
-        ZStack {
-            if stroke {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke()
-                    .foregroundStyle(backgroundColor)
-                
-                Text(title)
-                    .foregroundStyle(textColor)
-                    .font(.system(size: 20, weight: .bold))
-
-            }
-            else {
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundStyle(backgroundColor)
-                
-                Text(title)
-                    .foregroundStyle(textColor)
-                    .font(.system(size: 20, weight: .bold))
-
-            }
-            
-        }
-        .frame(width: UIScreen.main.bounds.width - 50, height: 60)
-    }
-}
-
 #Preview {
     NavigationStack {
         LandingView()
